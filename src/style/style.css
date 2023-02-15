@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Patrick Hand', cursive;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 ul,
@@ -37,9 +37,74 @@ li {
 .navbar-list a {
   text-decoration: none;
   color: #272a31;
+  font-size: 20px;
+}
+
+.active {
+  border-bottom: 2px solid;
+}
+
+h1 {
+  /* padding-left: 80px; */
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.btn {
+  padding: 5px;
 }
 
 footer {
   border-top: #272a31 2px solid;
   padding: 18px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.media-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  margin: 0 3px;
+  font-size: 3px;
+}
+
+.fa-heart {
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 767px) {
+  .media-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    padding: 0 44px;
+  }
+
+  .media-item .media-container {
+    margin: 20px;
+  }
+
+  .media-details {
+    margin: 0 3px;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
 }
