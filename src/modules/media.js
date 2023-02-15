@@ -26,8 +26,8 @@ class Media {
             <span>${current.show.name.substring(0, 14)}</span>
             <span> <i class="fa fa-heart" data-id=${current.show.id}></i>likes</span>
           </div>
-          <div class="diplay-flex space-around">
-            <button class="btn" data-id=${current.show.id}>Comments</button>
+          <div class="diplay-flex space-around">            
+            <button class="btn" data-id=${current.show.id} id="${current.show.id}" type="button" onclick="popUpComment(${current.show.id})">Comments</button>
           </div>          
         </div>
         `;
