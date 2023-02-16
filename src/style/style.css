@@ -81,7 +81,7 @@ footer {
 }
 
 .fa-heart {
-  padding: 0 10px;
+  padding: 0 0.7em;
 }
 
 .card {
@@ -197,7 +197,12 @@ p {
   }
 
   .media-details {
-    margin: 0 3px;
+    margin: 0 8px;
+    padding: 0 12px;
+  }
+
+  .media-name {
+    margin-right: 3rem;
   }
 
   .btn {
