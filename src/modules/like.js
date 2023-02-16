@@ -4,7 +4,7 @@ class Like {
     faHeart.forEach((btn) => {
       btn.addEventListener('click', () => {
         const contentID = parseInt(btn.getAttribute('like-id'), 10);
-        item.submitLike(contentID);
+        item.submitLike(contentID, btn);
       });
     });
   }
