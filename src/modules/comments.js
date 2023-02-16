@@ -6,7 +6,7 @@ const comments = () => {
   popup.className = 'popup-container';
   const baseApi = 'https://api.tvmaze.com/';
   const details = [{
-    country: '', type: '', image: '', name: '', release: '', summary: '',
+    country: '', status: '', image: '', name: '', release: '', summary: '',
   }];
 
   const showContent = () => {
@@ -31,7 +31,7 @@ const comments = () => {
       <div class="movie-attributes">
         <ul>
           <li><span>Name:</span> ${details.name}</li>
-          <li><span>Type:</span> ${details.type}</li>
+          <li><span>Status:</span> ${details.status}</li>
         </ul>
         <ul>
         <li><span>Country:</span> ${details.country}</li>
@@ -69,7 +69,7 @@ const comments = () => {
       details.summary = content.summary;
     }
     details.name = content.name;
-    details.type = content.type;
+    details.status = content.status;
     details.release = content.premiered;
     details.image = content.image.original;
     showContent(id);
