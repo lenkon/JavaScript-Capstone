@@ -69,7 +69,7 @@ const comments = () => {
       details.summary = content.summary;
     }
     details.name = content.name;
-    details.type = content.type;
+    details.type = content.types;
     details.release = content.premiered;
     details.image = content.image.original;
     showContent(id);
