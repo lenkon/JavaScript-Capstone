@@ -14,7 +14,7 @@
   \**********************/
 /***/ (() => {
 
-eval("// import './style/style.css';\n// import navbar from './modules/navbar.js';\n// import Media from './modules/media.js';\n// import comments from './modules/comments.js';\n\n// const media = new Media();\n// navbar();\n// media.showContents();\n// comments();\n\n//# sourceURL=webpack://javascript-capstone/./src/index.js?");
+eval("\n\n//# sourceURL=webpack://javascript-capstone/./src/index.js?");
 
 /***/ })
 
