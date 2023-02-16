@@ -14,7 +14,7 @@
   \**********************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://javascript-capstone/./src/index.js?");
+eval("console.log('abc');\n\n//# sourceURL=webpack://javascript-capstone/./src/index.js?");
 
 /***/ })
 
