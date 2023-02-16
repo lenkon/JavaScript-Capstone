@@ -1,1 +1,1 @@
-console.log('abc');
+import './style/style.css';
