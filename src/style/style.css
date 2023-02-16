@@ -97,13 +97,12 @@ footer {
 }
 
 .popup-container {
-  width: 70%;
+  width: 80%;
   height: auto;
   background-color: white;
-  margin-top: 4%;
-  margin-bottom: 4%;
+  margin-top: 1%;
+  margin-bottom: 2%;
   border-radius: 8px;
-  padding-top: 8%;
 }
 
 .card-container {
@@ -139,7 +138,7 @@ p {
 }
 
 .content-details p {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 #content-image {
@@ -194,7 +193,7 @@ p {
   }
 
   .media-item .media-container {
-    margin: 20px;
+    margin: 19px;
   }
 
   .media-details {
@@ -207,3 +206,4 @@ p {
     padding: 5px;
   }
 }
+
