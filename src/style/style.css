@@ -49,13 +49,25 @@ h1 {
   margin-bottom: 36px;
 }
 
-.btn {
-  padding: 5px;
+h1 span {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 36px;
+  margin-right: 0.2em;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0 2rem;
 }
 
 footer {
   border-top: #272a31 2px solid;
   padding: 18px;
+}
+
+footer p {
+  font-size: 16px;
 }
 
 .display-flex {
@@ -120,11 +132,6 @@ footer {
   justify-content: end;
 }
 
-p {
-  font-size: 1rem;
-  padding: 0 2rem;
-}
-
 .popup-img {
   display: flex;
   justify-content: center;
@@ -183,6 +190,30 @@ p {
   gap: 1rem;
 }
 
+.media-details {
+  margin: 0 8px;
+  padding: 0 12px;
+}
+
+.media-name {
+  margin-right: 3rem;
+}
+
+.like-count {
+  color: rgb(148, 20, 45);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: rgb(163, 163, 231);
+  width: 120%;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+}
+
 @media screen and (min-width: 767px) {
   .media-container {
     display: flex;
@@ -194,20 +225,5 @@ p {
 
   .media-item .media-container {
     margin: 20px;
-  }
-
-  .media-details {
-    margin: 0 8px;
-    padding: 0 12px;
-  }
-
-  .media-name {
-    margin-right: 3rem;
-  }
-
-  .btn {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
   }
 }
