@@ -1,4 +1,8 @@
 import './media.js';
+import displayComment from './displayCommentHelper.js';
+// eslint-disable-next-line import/no-cycle
+import submitComment from './submitCommentHelper.js';
+import commentCounter from './commentCounter.js';
 
 const comments = () => {
   const cardContainer = document.getElementById('card-container');
@@ -9,7 +13,11 @@ const comments = () => {
     country: '', type: '', image: '', name: '', release: '', summary: '',
   }];
 
-  const showContent = () => {
+  const showContent = async (id) => {
+    let count = await commentCounter(id);
+
+    count = count || 0;
+
     popup.innerHTML = '';
     document.getElementById('card').style.display = 'block';
     const popupDetails = `
@@ -25,8 +33,8 @@ const comments = () => {
           id="content-image"
         />
       </div>
-      <div class="content-details">
-        <p>${details.summary}</p>
+      <div class="content-details">      
+        <p class="summary">${details.summary}</p>
       </div>
       <div class="movie-attributes">
         <ul>
@@ -39,30 +47,28 @@ const comments = () => {
         </ul>
       </div>
       <div class="comment-display">
-        <h2>Comments</h2>
-        <ul>          
-          <li>02/15/2023 Comments</li>
-        </ul>
+        <h2>Comments (<span id="count">${count}</span>)</h2>
+        <ul id="comments-container"></ul>
       </div>
       <div class="add-comment">
         <h2>Add Comments</h2>
         <ul>
-          <li><input type="text" name="text-name" id="text-name" placeholder="Your Name"></li>
-          <li><textarea name="text-insights" id="text-insights" cols="35" rows="7" placeholder="Your insights"></textarea></li>
-          <li><button>Comment</button></li>
+          <li><input type="text" name="text-name" id="text-name" placeholder="Your Name" required></li>
+          <li><textarea name="text-insights" id="text-insights" cols="35" rows="7" placeholder="Your insights" required></textarea></li>
+          <li><button type="button" id="submit" onclick="submitComment(${id})">Comment</button></li>
+          
         </ul>
       </div>
     `;
     popup.innerHTML += popupDetails;
     cardContainer.appendChild(popup);
+
+    submitComment();
+    displayComment(id);
   };
+
   const fetchContent = async (id) => {
     const content = await fetch(`${baseApi}shows/${id}`).then((response) => response.json());
-    if (content.network === null) {
-      details.country = 'N/A';
-    } else {
-      details.country = content.network.country.name;
-    }
     if (content.summary === null) {
       details.summary = '';
     } else {
@@ -72,6 +78,7 @@ const comments = () => {
     details.type = content.type;
     details.release = content.premiered;
     details.image = content.image.original;
+
     showContent(id);
   };
 
