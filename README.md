@@ -66,8 +66,8 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Source Link](https://github.com/lenkon/JavaScript-Capstone)
-- [Live Demo]()
-- [Video Demo]()
+- [Live Demo](https://lenkon.github.io/JavaScript-Capstone/)
+- [Video Demo](https://drive.google.com/file/d/11Wewj2ZiTTjuEChPudLR9uSwTu2ZN9Js/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
