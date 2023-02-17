@@ -17,6 +17,7 @@ const displayComment = (id) => {
           <li class="comment-items"> <p>${fetchData[i].creation_date}</p><p>${fetchData[i].username}:</p><p>${fetchData[i].comment}</p></li>      
         `;
       }
+      document.getElementById('count').innerHTML = fetchData.length > 0 ? `${fetchData.length}` : '0';
     }
   });
 };

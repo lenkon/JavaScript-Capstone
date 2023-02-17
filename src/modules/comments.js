@@ -2,6 +2,7 @@ import './media.js';
 import displayComment from './displayCommentHelper.js';
 // eslint-disable-next-line import/no-cycle
 import submitComment from './submitCommentHelper.js';
+import commentCounter from './commentCounter.js';
 
 const comments = () => {
   const cardContainer = document.getElementById('card-container');
@@ -12,7 +13,11 @@ const comments = () => {
     country: '', type: '', image: '', name: '', release: '', summary: '',
   }];
 
-  const showContent = (id) => {
+  const showContent = async (id) => {
+    let count = await commentCounter(id);
+
+    count = count || 0;
+
     popup.innerHTML = '';
     document.getElementById('card').style.display = 'block';
     const popupDetails = `
@@ -42,7 +47,7 @@ const comments = () => {
         </ul>
       </div>
       <div class="comment-display">
-        <h2>Comments</h2>
+        <h2>Comments (<span id="count">${count}</span>)</h2>
         <ul id="comments-container"></ul>
       </div>
       <div class="add-comment">

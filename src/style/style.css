@@ -228,6 +228,11 @@ footer p {
   padding: 10px;
 }
 
+#count {
+  font-size: 32px;
+  color: rgb(148, 20, 45);
+}
+
 @media screen and (min-width: 767px) {
   .media-container {
     display: flex;
