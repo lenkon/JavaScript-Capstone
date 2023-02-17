@@ -37,7 +37,10 @@ class Media {
             </div>
             <div class="media-details display-flex space-evenly">
               <div class="media-name">${current.show.name.substring(0, 14)}</div>
-              <span><span class="like-count">${likeCount}</span><i class="fa fa-heart" like-id=${current.show.id}></i></span>
+              <div class="like-count">
+                <span>${likeCount}</span>
+                <i class="fa fa-heart" like-id=${current.show.id}></i>
+              </div>              
             </div>
             <div class="diplay-flex space-around">            
               <button class="btn" id="${current.show.id}" type="button" onclick="popUpComment(${current.show.id})">Comments</button>
@@ -69,7 +72,7 @@ class Media {
     const likeIndex = this.likes.findIndex((like) => like.item_id === contentID);
 
     const likeCount = likeIndex >= 0 ? this.likes[likeIndex].likes : 0;
-    likeBtn.parentElement.nextElementSibling.innerHTML = likeCount;
+    likeBtn.previousElementSibling.innerHTML = likeCount;
   }
 }
 
