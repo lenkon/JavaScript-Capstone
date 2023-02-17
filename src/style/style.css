@@ -214,6 +214,25 @@ footer p {
   margin-top: 4px;
 }
 
+.comment-items {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.comment-items p {
+  font-size: 15px;
+}
+
+#text-insights,
+#text-name {
+  padding: 10px;
+}
+
+#count {
+  font-size: 32px;
+  color: rgb(148, 20, 45);
+}
+
 @media screen and (min-width: 767px) {
   .media-container {
     display: flex;
