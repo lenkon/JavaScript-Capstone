@@ -28,7 +28,7 @@
 
 # 📖 [JavaScript-Capstone: Media] <a name="about-project"></a>
 
-> The website provides information about popular regional shows and documentaries and allows users to rate and comment. This website is developed for the second module capstone project. It is built with JavaScript, HTML, and CSS.
+> The website provides information about popular regional shows and documentaries, and allows users to rate and comment. This website is developed for the second module capstone project. It is built with JavaScript, HTML, and CSS.
 
 **[JavaScript-Capstone: Media]** is...
 
@@ -36,12 +36,12 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
->  Built with html, css and javascript with webpack, jest, and linter configuration setup.
+>  Built with HTML, CSS and JavaScript with webpack, jest, and linter configuration setup.
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://github.com/lenkon/leaderboard/blob/setup-project/.github/workflows/linters.yml">linter</a></li>
+    <li><a href="https://github.com/lenkon/JavaScript-Capstone/blob/adhoc-development/.github/workflows/linters.yml">linter</a></li>
     <li><a href="https://www.w3schools.com/html/">html</a></li>
     <li><a href="https://www.w3schools.com/w3css/defaulT.asp">css</a></li>
     <li><a href="https://www.w3schools.com/js/default.asp">javascript</a></li>
@@ -66,7 +66,8 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Source Link](https://github.com/lenkon/JavaScript-Capstone)
-- [Live Demo](https://lenkon.github.io/leaderboard/)
+- [Live Demo](https://lenkon.github.io/JavaScript-Capstone/)
+- [Video Demo](https://drive.google.com/file/d/11Wewj2ZiTTjuEChPudLR9uSwTu2ZN9Js/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,6 +115,10 @@ Run the test using the command
 👤 **lenkon**
 
 - GitHub: [@lenkon](https://github.com/lenkon)
+
+👤 **Habtamu**
+
+- GitHub: [@Habtamu210](https://github.com/Habtamu210)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
